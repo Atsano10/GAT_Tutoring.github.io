@@ -62,8 +62,11 @@
                 <li class="nav-item ">
                   <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
                 </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="service.html">About Tutors</a>
+                </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="service.html">Services</a>
+                  <a class="nav-link" href="service.html">Subjects</a>
                 </li>
               </ul>
             </div>
@@ -75,29 +78,110 @@
   </div>
 
   <!-- about section -->
-
-  <section class="about_section layout_padding">
+  <section class="client_section">
     <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6">
-          <div class="detail-box">
-            <h2>
-              About us
-            </h2>
-            <p>
-              Describe
-            </p>
+      <div class="heading_container heading_center">
+        <h2 style="padding-top:10px;">About Tutors</h2>
+      </div>
+      <div class="carousel-wrap layout_padding2-top">
+        <div class="owl-carousel" id="client-carousel">
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-2.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>Apostolos Tsano</h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>The English guy! As an English tutor, my approach is rooted in fostering a love for language and literature. I believe in creating a nurturing and inclusive learning environment where students feel empowered to express themselves and explore the richness of the English language. Whether we're dissecting Shakespearean sonnets, crafting persuasive essays, or analyzing contemporary novels, I aim to inspire a lifelong appreciation for the power of words.</p>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-7 col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-3.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>Tahmina</h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>Im the math tutor! My approach to teaching mathematics is centered around creating a supportive and interactive learning environment. I believe in tailoring my teaching methods to suit the individual needs and learning styles of my students. Whether you're struggling with algebra, geometry, or calculus, I'm here to help break down complex concepts into manageable steps and guide you through the learning process with patience and encouragement.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="box">
+              <div class="client_id">
+                <div class="img-box">
+                  <img src="images/client-4.jpg" alt="">
+                </div>
+                <div class="client_detail">
+                  <div class="client_info">
+                    <h6>Gavin Chang</h6>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                  </div>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="client_text">
+                <p>Everything Science! As a science tutor, my goal is to make science come alive for my students. I believe in fostering curiosity, critical thinking, and a deep understanding of scientific concepts. Whether we're conducting experiments, analyzing data, or diving into theory, I strive to create engaging and interactive lessons that inspire my students to think like scientists.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
+  
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const clientCarousel = $('#client-carousel');
+  
+      clientCarousel.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
   <!-- end about section -->
 
   <!-- info section -->

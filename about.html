@@ -38,7 +38,19 @@
             <a href="">
               <i class="fa fa-envelope" aria-hidden="true"></i>
               <span>
-                Email : demo@gmail.com
+                Email : getaheadnyc@gmail.com
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+              <span>
+                Insta : @getaheadnyc
+              </span>
+            </a>
+            <a href="">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <span>
+                Tiktok : @gat.tutoring
               </span>
             </a>
           </div>
@@ -89,7 +101,7 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-2.jpg" alt="">
+                  <img src="images/Apostolos.PNG" alt="">
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
@@ -112,7 +124,7 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-3.jpg" alt="">
+                  <img src="images/Tahmina.PNG" alt="">
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
@@ -135,7 +147,7 @@
             <div class="box">
               <div class="client_id">
                 <div class="img-box">
-                  <img src="images/client-4.jpg" alt="">
+                  <img src="images/Gavin.PNG" alt="">
                 </div>
                 <div class="client_detail">
                   <div class="client_info">
@@ -159,6 +171,29 @@
     </div>
   </section>
   
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const clientCarousel = $('#client-carousel');
+  
+      clientCarousel.owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        dots: false,
+        responsive: {
+          0: {
+            items: 1
+          },
+          600: {
+            items: 2
+          },
+          1000: {
+            items: 3
+          }
+        }
+      });
+    });
+  </script>
   <!-- end about section -->
 
   <!-- info section -->
